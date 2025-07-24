@@ -16,6 +16,8 @@
             text-align: center;
             color: white;
             position: relative;
+            min-height: 100vh;
+            /* 🔥 Esto centra la .card verticalmente */
         }
 
         .card {
@@ -31,6 +33,8 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             /* Borde sutil */
             max-width: 90%;
+            align-items: center;
+
         }
 
         h1 {
