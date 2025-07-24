@@ -1,0 +1,103 @@
+/* RESET GENERAL: elimina márgenes y paddings por defecto y mejora control del layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO GENERAL DEL CUERPO DE LA PÁGINA */
+body {
+  background: linear-gradient(135deg, #4b001f, #d17580); /* Degradado elegante burdeos a rosado claro */
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* TARJETA CENTRAL DONDE VA EL MENSAJE */
+.card {
+  background: #db8094; /* Marfil suave */
+  padding: 60px 40px;
+  border-radius: 25px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 40px;
+  color: #8e0038; /* Vino tinto */
+  margin-bottom: 40px;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+/* CONTENEDOR DE BOTONES */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* BOTONES PERSONALIZADOS */
+.btn {
+  background: #8e0038; /* Vino tinto */
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* EFECTO HOVER EN LOS BOTONES */
+.btn:hover {
+  background: #b3004b; /* Vino más claro */
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Brillo dorado */
+}
+
+/* ANIMACIÓN DE APARICIÓN DEL CONTENEDOR */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ANIMACIÓN DE FLOTACIÓN DEL TÍTULO */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 600px) {
+  .card {
+    padding: 40px 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
