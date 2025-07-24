@@ -5,13 +5,12 @@
         }
 
         body {
-            background: linear-gradient(135deg, #4b001f, #d17580);
+            background: linear-gradient(13deg, #4b001f, #d17580);
             font-family: 'Poppins', sans-serif;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
         }
 
         .card {
